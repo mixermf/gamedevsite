@@ -189,5 +189,11 @@
         }
       ]
     }
-  ]
+  ],
+  "privacyPolicy": {
+    "source": "https://unilinegames.github.io/site/policy_android_eng.html",
+    "copied": "2026-10-07",
+    "path": "/policy",
+    "changes": "Added a prominent Privacy Policy heading before the unchanged original document body."
+  }
 }

@@ -10,7 +10,9 @@ For a local HTTP preview, run `python -m http.server 8080` from this directory, 
 
 ## Deploy to your server
 
-Upload `index.html`, `styles.css`, `script.js`, and the entire `assets/` directory to your document root (for example, Nginx `/var/www/gamedevsite`). Keep the relative directory structure. A subdirectory deployment also works without editing paths.
+Upload `index.html`, `styles.css`, `script.js`, and the entire `assets/` and `policy/` directories to your document root (for example, Nginx `/var/www/gamedevsite`). Keep the relative directory structure. A subdirectory deployment also works without editing paths.
+
+The privacy policy is served from `policy/index.html`: standard static servers make it available at `/policy` (redirecting to `/policy/`). Its original document text is preserved from https://unilinegames.github.io/site/policy_android_eng.html, with only a new “Privacy Policy” title added above it.
 
 Set `index.html` as the default document. No URL rewrites or server-side code are needed. Serve over HTTPS. Optional: enable compression and caching for CSS, JavaScript, fonts, and WebP images. For fonts, use the `font/woff2` MIME type.
 
